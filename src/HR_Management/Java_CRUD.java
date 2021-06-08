@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_crud;
+package HR_Management;
 
 
 import java.sql.DriverManager;
@@ -32,6 +32,21 @@ public class Java_CRUD {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Screen sc=new Screen();
+        sc.setVisible(true);
+        try {
+            for (int i = 0; i <= 100; i++) {
+                Thread.sleep(50);
+                sc.numb.setText(Integer.toString(i)+"%");
+                
+                Home hm=new Home();
+                if(i==100){
+                    sc.dispose();
+                    hm.show();
+                }
+            }
+        } catch (Exception e) {
+        }
         
         try {
             // register driver yang akan dipakai

@@ -5,7 +5,6 @@
  */
 package HR_Management;
 
-
 import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.Statement;
@@ -15,9 +14,9 @@ import java.sql.ResultSet;
  *
  * @author user
  */
-public class Java_CRUD extends Thread{
+public class Java_CRUD{
 
-    
+ /*   
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost/hrd";
     static final String USER = "root";
@@ -26,28 +25,30 @@ public class Java_CRUD extends Thread{
     static Connection conn;
     static Statement stmt;
     static ResultSet rs;
-
+*/
     /**
      * @param args the command line arguments
      */
-    @SuppressWarnings("deprecation")
+    
     public static void main(String[] args) {
         // TODO code application logic here
         Screen sc=new Screen();
         sc.setVisible(true);
+        
         try {
             for (int i = 0; i <= 100; i++) {
-                
                 Thread.sleep(40);
                 sc.numb.setText(Integer.toString(i)+"%");
                 Home hm=new Home();
                 
                 if(i==100){
-                    sc.dispose();
-                    hm.show();
+                sc.dispose();
+                hm.show();
                 }
+                
             }
-        } catch (InterruptedException e) {
+            
+        } catch (Exception e) {
         }
         
         /*

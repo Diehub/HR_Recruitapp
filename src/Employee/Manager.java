@@ -9,6 +9,13 @@ package Employee;
  *
  * @author user
  */
-public class Manager {
+public class Manager extends Position{
     
+     public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
 }

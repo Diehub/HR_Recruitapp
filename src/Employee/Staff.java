@@ -9,6 +9,14 @@ package Employee;
  *
  * @author user
  */
-public class Staff {
+public class Staff extends Position{
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
     
 }

@@ -9,6 +9,12 @@ package Employee;
  *
  * @author user
  */
-public class Leader {
-    
+public class Leader extends Position{
+     public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
 }

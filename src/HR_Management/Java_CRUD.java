@@ -16,16 +16,6 @@ import java.sql.ResultSet;
  */
 public class Java_CRUD{
 
- /*   
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost/hrd";
-    static final String USER = "root";
-    static final String PASS = "";
-    
-    static Connection conn;
-    static Statement stmt;
-    static ResultSet rs;
-*/
     /**
      * @param args the command line arguments
      */
@@ -34,6 +24,7 @@ public class Java_CRUD{
         // TODO code application logic here
         Screen sc=new Screen();
         sc.setVisible(true);
+        
         
         try {
             for (int i = 0; i <= 100; i++) {
@@ -45,7 +36,6 @@ public class Java_CRUD{
                 sc.dispose();
                 hm.show();
                 }
-                
             }
             
         } catch (Exception e) {

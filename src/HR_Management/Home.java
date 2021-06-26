@@ -6,6 +6,7 @@
 package HR_Management;
 
 import java.awt.Color;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -108,6 +109,11 @@ public class Home extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(51, 51, 51));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("REGISTER");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 221, 90, -1));
 
         jButton2.setBackground(new java.awt.Color(51, 51, 51));
@@ -135,10 +141,16 @@ public class Home extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        //if(jTextField1.getText()=="hrd" || jPasswordField1.getPassword().toString()=="hrd"){
         this.dispose();
         Point page=new Point();
         page.setVisible(true);
         page.show();
+        //}else{
+       
+       //JOptionPane.showMessageDialog(this,"Masukkan kembali");  
+        //}
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
@@ -170,6 +182,14 @@ int xy;int xx;
         jLabel3.setForeground(new Color(222,222,222));
         jLabel2.setForeground(new Color(102,102,102));
     }//GEN-LAST:event_jPasswordField1FocusGained
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        Point2 page2= new Point2();
+        page2.setVisible(true);
+        page2.show();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     
     /**
